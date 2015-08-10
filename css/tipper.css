@@ -1,0 +1,36 @@
+.tipper {
+    position: relative;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #2da25f;
+}
+
+.tipper-item {
+    display: none;
+    position: absolute;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #2da25f;
+    color: #fff;
+    font-size: 14px;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.tipper-item:after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    text-align: center;
+
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #2da25f;
+}
