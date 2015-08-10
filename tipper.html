@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip Plugin</title>
+
+
+    <link href="css/tipper.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <style>
+
+        #container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <article id="container">
+        <p>
+            <span data-tooltip-title="noun: cured meat from the back or sides of a pig" class="tipper">Bacon</span> ipsum dolor amet voluptate non aliqua ea brisket laboris, jowl sausage ham. Magna kevin beef, boudin bresaola culpa spare ribs. In flank ut enim chuck meatloaf pastrami capicola <span data-tooltip-title="noun: a ball of minced or chopped meat" class="tipper">meatball.</span> Cupim boudin fugiat dolor laboris exercitation flank doner pork loin commodo. Doner ex velit spare ribs incididunt. Magna pork nostrud, short loin rump commodo do duis tongue picanha laborum.
+        </p>
+        
+        <p>
+            Elit esse dolore, dolor aliquip kevin qui. Kielbasa velit pork drumstick. Minim brisket andouille chuck. Elit <span data-tooltip-title="noun: salted or smoked meat from the upper part of a pig's leg" class="tipper">ham</span> hock salami shankle aute cow excepteur andouille pariatur short loin eiusmod. Veniam shank cupidatat ut boudin pork chop aute. Pork nostrud andouille, beef sunt tempor boudin shankle exercitation leberkas. Meatball non chuck jerky dolore meatloaf pariatur enim picanha porchetta in sint andouille.
+        </p>
+        
+        <p>
+            Laboris voluptate bresaola consequat pastrami kevin swine. Ham hock tail pork belly ex laboris andouille tongue drumstick <span data-tooltip-title="noun: beef preserved in brine, chopped and pressed and sold in tins" class="tipper">corned beef.</span> Laborum lorem nisi chuck bresaola. Pork belly occaecat filet mignon, rump qui ham culpa ut biltong tri-tip drumstick elit non enim.
+        </p>
+        
+        <p>
+            Beef mollit corned beef eu dolore, short loin pork belly. Flank nostrud nulla beef rump. Exercitation aliqua cow, leberkas biltong velit occaecat ad. Voluptate bacon flank sed aute in nulla pork chop shank venison prosciutto shankle sunt. T-bone meatball shankle, beef cupidatat alcatra cupim short ribs. Cupim cillum ullamco strip steak beef ribs ad non prosciutto. Pork belly sunt short loin picanha <span data-tooltip-title="noun: a type of highly seasoned sausage, originally from Italy, usually eaten cold in slices" class="tipper">salami</span> short ribs.
+        </p>
+
+        <p>
+            Laboris voluptate bresaola consequat pastrami kevin swine. Ham hock tail pork belly ex laboris andouille <span data-tooltip-title="noun: the fleshy muscular organ in the mouth of a mammal, used for tasting, licking, swallowing, and (in humans) articulating speech" class="tipper">tongue</span> drumstick corned beef. Laborum lorem nisi chuck bresaola. Pork belly occaecat filet mignon, rump qui ham culpa ut biltong tri-tip drumstick elit non enim.
+        </p>
+    </article>
+
+
+    <script src="src/jquery-1.11.3.js"></script>
+    <script src="src/tipper.js"></script>
+    
+    <script>
+    jQuery( document ).ready( function($) {
+
+        (function() {
+            $( '.tipper' ).tipper();
+        })();
+
+    });
+    </script>
+
+    
+</body>
+</html>
